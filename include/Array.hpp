@@ -1,7 +1,9 @@
 #ifndef _ARRAY_HPP_
 #define _ARRAY_HPP_
 
-namespace Data {
+#include <iostream>
+
+namespace data {
     template<class DataType>
     class Array
     {
@@ -25,7 +27,9 @@ namespace Data {
 
         DataType& operator[] (int index);
 
-//        operator int* ();
+        operator DataType* ();
+
+//        std::ostream operator<< (std::ostream os Array& array);
     };
     
 }

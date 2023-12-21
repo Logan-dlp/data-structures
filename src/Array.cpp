@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Array.hpp"
 
-namespace Data {
+namespace data {
     template<class Datatype>
     inline Array<Datatype>::Array (int size)
     {
@@ -73,11 +73,16 @@ namespace Data {
         return this->_array[index];
     }
 
+    template<class Datatype>
+    Array<Datatype>::operator Datatype* ()
+    {
+        return this->_array;
+    }
 
-    // Array::operator Datatype* ()
-    // {
-
-    // }
+//    template<class Datatype>
+//    std::ostream Array<Datatype>::operator<< (std::ostream os Array& array){
+//
+//    }
 
     template class Array<int>;
     template class Array<float>;
