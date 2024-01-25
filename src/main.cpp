@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Array.hpp"
-#include "Node.h"
-#include "LinkedList.h"
+#include "LinkedList.hpp"
+#include "../include/ListIterator.hpp"
 
 using namespace data;
 
@@ -53,13 +53,19 @@ void displayArray(Array<Datatype>& array){
 
 template<class Datatype>
 void displayList(LinkedList<Datatype>& list){
-    Node<Datatype>* node = list._head;
-    if (node != nullptr){
-        while (node != nullptr){
-            std::cout << node->_data;
-            std::cout << " -> ";
-            node = node->_next;
-        }
-        std::cout << std::endl;
+//    Node<Datatype>* node = list._head;
+//    if (node != nullptr){
+//        while (node != nullptr){
+//            std::cout << node->_data;
+//            std::cout << " -> ";
+//            node = node->_next;
+//        }
+//        std::cout << std::endl;
+//    }
+    ListIterator<Datatype> itr = list.getIterator();
+    while(itr.hasNext()){
+        std::cout << itr.item() << " -> ";
+        itr.forth();
     }
+    std::cout << std::endl;
 }

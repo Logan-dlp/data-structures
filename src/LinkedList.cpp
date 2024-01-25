@@ -1,4 +1,5 @@
-#include "LinkedList.h"
+#include "LinkedList.hpp"
+#include "../include/ListIterator.hpp"
 
 namespace data {
     template<class DataType>
@@ -80,6 +81,11 @@ namespace data {
             }
             this->_count--;
         }
+    }
+
+    template<class DataType>
+    ListIterator<DataType> LinkedList<DataType>::getIterator(){
+        return ListIterator<DataType>(this);
     }
 
     template class LinkedList<int>;

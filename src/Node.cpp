@@ -1,4 +1,4 @@
-#include "Node.h"
+#include "Node.hpp"
 
 namespace data{
     template<class Datatype>
