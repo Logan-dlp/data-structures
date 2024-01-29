@@ -2,6 +2,7 @@
 #include "Array.hpp"
 #include "LinkedList.hpp"
 #include "../include/ListIterator.hpp"
+#include "../include/DoublyNode.hpp"
 
 using namespace data;
 
@@ -28,16 +29,27 @@ int main()
 //    array.remove(2);
 //    displayArray(array);
 
-    LinkedList<int> list;
-    list.append(0);
-    list.append(1);
-    list.append(2);
-    list.prepend(3);
-    displayList(list);
-    list.removeHead();
-    displayList(list);
-    list.removeTail();
-    displayList(list);
+//    LinkedList<int> list;
+//    list.append(0);
+//    list.append(1);
+//    list.append(2);
+//    list.prepend(3);
+//    displayList(list);
+//    list.removeHead();
+//    displayList(list);
+//    list.removeTail();
+//    displayList(list);
+
+    DoublyNode<int> node1 = DoublyNode(1);
+    DoublyNode<int> node2 = DoublyNode(0);
+    DoublyNode<int> node3 = DoublyNode(2);
+
+    node1.insertBefore(node2._data);
+    node1.insertAfter(node3._data);
+
+    std::cout << node1._previous->_data << std::endl;
+    std::cout << node1._data << std::endl;
+    std::cout << node1._next->_data << std::endl;
 
     return 0;
 }
