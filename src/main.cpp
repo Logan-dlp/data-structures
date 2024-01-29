@@ -3,6 +3,7 @@
 #include "LinkedList.hpp"
 #include "../include/ListIterator.hpp"
 #include "../include/DoublyNode.hpp"
+#include "../include//DoublyLikedList.hpp"
 
 using namespace data;
 
@@ -41,15 +42,13 @@ int main()
 //    displayList(list);
 
     DoublyNode<int> node1 = DoublyNode(1);
-    DoublyNode<int> node2 = DoublyNode(0);
-    DoublyNode<int> node3 = DoublyNode(2);
+    DoublyNode<int> node2 = DoublyNode(3);
 
-    node1.insertBefore(node2._data);
-    node1.insertAfter(node3._data);
+    DoublyLinkedList<int> list;
 
-    std::cout << node1._previous->_data << std::endl;
-    std::cout << node1._data << std::endl;
-    std::cout << node1._next->_data << std::endl;
+    list.append(node1._data);
+
+    std::cout << list._head->_data << std::endl;
 
     return 0;
 }

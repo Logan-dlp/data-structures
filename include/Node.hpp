@@ -1,5 +1,5 @@
-#ifndef _NODE_H
-#define _NODE_H
+#ifndef _NODE_HPP
+#define _NODE_HPP
 
 namespace data{
     template<class Datatype>
@@ -16,4 +16,4 @@ namespace data{
     };
 }
 
-#endif //_NODE_H
+#endif //_NODE_HPP

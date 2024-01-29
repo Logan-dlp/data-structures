@@ -1,5 +1,5 @@
-#ifndef _LINKEDLIST_H
-#define _LINKEDLIST_H
+#ifndef _LINKEDLIST_HPP
+#define _LINKEDLIST_HPP
 
 #include "Node.hpp"
 
@@ -26,4 +26,4 @@ namespace data {
     };
 }
 
-#endif //_LINKEDLIST_H
+#endif //_LINKEDLIST_HPP

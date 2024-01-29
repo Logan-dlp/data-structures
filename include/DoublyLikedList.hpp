@@ -1,4 +1,25 @@
-#ifndef DATA_STRUCTURES_DOUBLYLIKEDLIST_HPP
-#define DATA_STRUCTURES_DOUBLYLIKEDLIST_HPP
+#ifndef _DOUBLYLIKEDLIST_HPP
+#define _DOUBLYLIKEDLIST_HPP
 
-#endif //DATA_STRUCTURES_DOUBLYLIKEDLIST_HPP
+#include "DoublyNode.hpp"
+
+namespace data{
+    template<class DataType>
+    class DoublyLinkedList{
+        public:
+        DoublyNode<DataType>* _head;
+        DoublyNode<DataType>* _tail;
+        int _count;
+
+        DoublyLinkedList();
+        ~DoublyLinkedList();
+
+        void append(DataType data);
+        void prepend(DataType data);
+
+        void removeHead();
+        void removeTail();
+    };
+}
+
+#endif //_DOUBLYLIKEDLIST_HPP
