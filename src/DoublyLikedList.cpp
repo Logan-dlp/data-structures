@@ -9,6 +9,13 @@ namespace data{
     }
 
     template<class DataType>
+    inline DoublyLinkedList<DataType>::DoublyLinkedList(DataType data){
+        this->_head = this->_tail = new DoublyNode<DataType>;
+        this->_head->_data = this->_tail->_data = data;
+        this->_count = 1;
+    }
+
+    template<class DataType>
     inline DoublyLinkedList<DataType>::~DoublyLinkedList(){
         DoublyNode<DataType>* iterator = this->_head;
         DoublyNode<DataType>* next;

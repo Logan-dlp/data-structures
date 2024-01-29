@@ -41,14 +41,13 @@ int main()
 //    list.removeTail();
 //    displayList(list);
 
-    DoublyNode<int> node1 = DoublyNode(1);
-    DoublyNode<int> node2 = DoublyNode(3);
+    DoublyLinkedList<int> list = DoublyLinkedList(1);
 
-    DoublyLinkedList<int> list;
+    std::cout << list._head->_data << " " << list._count << std::endl;
 
-    list.append(node1._data);
+    list.prepend(3);
 
-    std::cout << list._head->_data << std::endl;
+    std::cout << list._tail->_data << " " << list._count << std::endl;
 
     return 0;
 }

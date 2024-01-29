@@ -12,6 +12,7 @@ namespace data{
         int _count;
 
         DoublyLinkedList();
+        DoublyLinkedList(DataType data);
         ~DoublyLinkedList();
 
         void append(DataType data);
