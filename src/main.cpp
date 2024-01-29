@@ -2,8 +2,8 @@
 #include "Array.hpp"
 #include "LinkedList.hpp"
 #include "../include/ListIterator.hpp"
-#include "../include/DoublyNode.hpp"
-#include "../include//DoublyLikedList.hpp"
+#include "../include/DoublyLikedList.hpp"
+#include "../include/DoublyLinkedListIterator.hpp"
 
 using namespace data;
 

@@ -4,6 +4,8 @@
 #include "DoublyNode.hpp"
 
 namespace data{
+    template<class> class DoublyLinkedListIterator;
+
     template<class DataType>
     class DoublyLinkedList{
         public:
@@ -20,6 +22,8 @@ namespace data{
 
         void removeHead();
         void removeTail();
+
+        DoublyLinkedListIterator<DataType> getIterator();
     };
 }
 

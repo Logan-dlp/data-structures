@@ -84,5 +84,10 @@ namespace data{
         }
     }
 
+    template<class DataType>
+    DoublyLinkedListIterator<DataType> DoublyLinkedList<DataType>::getIterator(){
+        return DoublyLinkedListIterator<DataType>(this);
+    }
+
     template class DoublyLinkedList<int>;
 }
