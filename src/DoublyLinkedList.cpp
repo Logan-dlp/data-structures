@@ -1,4 +1,5 @@
-#include "../include/DoublyLikedList.hpp"
+#include "../include/DoublyLinkedList.hpp"
+#include "../include/DoublyLinkedListIterator.hpp"
 
 namespace data{
     template<class DataType>
