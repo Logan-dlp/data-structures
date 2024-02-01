@@ -49,6 +49,10 @@ int main()
 
     displayDoublyList(list);
 
+    list.removeBefore(list.getIterator());
+
+    displayDoublyList(list);
+
     return 0;
 }
 

@@ -36,6 +36,13 @@ namespace data {
     }
 
     template<class DataType>
+    void DoublyLinkedListIterator<DataType>::end(){
+        if(this->_list != nullptr){
+            this->_node = this->_list->_tail;
+        }
+    }
+
+    template<class DataType>
     DataType& DoublyLinkedListIterator<DataType>::item(){
         return this->_node->_data;
     }

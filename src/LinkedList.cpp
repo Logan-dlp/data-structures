@@ -48,6 +48,20 @@ namespace data {
     }
 
     template<class DataType>
+    void LinkedList<DataType>::insert(ListIterator<DataType>& itr, DataType data){
+        if(itr._list != this) { return; }
+        if(itr._node != nullptr){
+            itr._node->insertAfter(data);
+            if(itr._node == this->_tail){
+                this->_tail = itr._node->_next;
+            }
+            this->_count++;
+        } else{
+            this->append(data);
+        }
+    }
+
+    template<class DataType>
     void LinkedList<DataType>::removeHead(){
         Node<DataType>* node = nullptr;
         if(this->_head != nullptr){
@@ -80,6 +94,28 @@ namespace data {
                 node->_next = nullptr;
             }
             this->_count--;
+        }
+    }
+
+    template<class DataType>
+    void LinkedList<DataType>::remove(ListIterator<DataType>& itr){
+        Node<DataType>* node = this->_head;
+        if(itr._list != this) { return; }
+        if(itr._node == nullptr) { return; }
+        if(itr._node == this->_head){
+            itr.forth();
+            this->removeHead();
+        } else{
+            while(node->_next != itr._node){
+                node = node->_next;
+            }
+            itr.forth();
+            if(node->_next == this->_tail){
+                this->_tail = node;
+            }
+
+            delete node->_next;
+            node->_next = itr._node;
         }
     }
 

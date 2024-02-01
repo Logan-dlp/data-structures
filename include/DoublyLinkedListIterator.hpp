@@ -20,6 +20,7 @@ namespace data{
         void start();
         void back();
         void forth();
+        void end();
 
         DataType& item();
         bool isValid();

@@ -18,9 +18,11 @@ namespace data {
 
         void append(DataType data);
         void prepend(DataType data);
+        void insert(ListIterator<DataType>& itr, DataType data);
 
         void removeHead();
         void removeTail();
+        void remove(ListIterator<DataType>& itr);
 
         ListIterator<DataType> getIterator();
     };
