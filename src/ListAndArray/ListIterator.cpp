@@ -1,5 +1,5 @@
-#include "../include/ListIterator.hpp"
-#include "../include/LinkedList.hpp"
+#include "../../include/ListAndArray/ListIterator.hpp"
+#include "../../include/ListAndArray/LinkedList.hpp"
 
 namespace data {
     template <class DataType>

@@ -1,7 +1,7 @@
 #ifndef _TREE_HPP
 #define _TREE_HPP
 
-#include "DoublyLinkedList.hpp"
+#include "../ListAndArray/DoublyLinkedList.hpp"
 
 namespace data {
     template <class DataType>

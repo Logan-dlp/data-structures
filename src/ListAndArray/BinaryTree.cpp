@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../include/BinaryTree.hpp"
+#include "../../include/ListAndArray/BinaryTree.hpp"
 
 namespace data {
 

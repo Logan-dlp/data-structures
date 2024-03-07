@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Array.hpp"
+#include "../../include/ListAndArray/Array.hpp"
 
 namespace data {
     template<class Datatype>

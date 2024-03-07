@@ -1,4 +1,4 @@
-#include "../include/Tree.hpp"
+#include "../../include/Tree/Tree.hpp"
 
 namespace data {
     template<class DataType>

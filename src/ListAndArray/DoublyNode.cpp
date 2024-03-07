@@ -1,4 +1,4 @@
-#include "../include/DoublyNode.hpp"
+#include "../../include/ListAndArray/DoublyNode.hpp"
 
 namespace data{
     template<class DataType>

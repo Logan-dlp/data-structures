@@ -1,5 +1,5 @@
-#include "../include/DoublyLinkedList.hpp"
-#include "../include/DoublyLinkedListIterator.hpp"
+#include "../../include/ListAndArray/DoublyLinkedList.hpp"
+#include "../../include/ListAndArray/DoublyLinkedListIterator.hpp"
 
 namespace data{
     template<class DataType>
